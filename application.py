@@ -32,7 +32,7 @@ with open(cfg_path,'rb') as f:
 cfg.MODEL.WEIGHTS = os.path.join(model_path)#"Modeller"+.split(".")[-1]
 cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.8
 
-#Tahmin edilecek sınıfların listesi
+#Tahmin edilecek sınıfların listesi 
 MetadataCatalog.get("train").set(thing_classes=['upperbody', 'lowerbody', 'wholebody','footwear', 'accessories'])
 predictor = DefaultPredictor(cfg)
 
