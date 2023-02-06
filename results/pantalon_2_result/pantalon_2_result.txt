@@ -1,0 +1,1 @@
+['lowerbody', 'upperbody', 'footwear', 'footwear']
