@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-light-grey w3-card">
+        <!--<img class="logo" src="https://www.zoidata.com/assets/img/logo.png" width="300" height="100">-->
+
+        <ul style="padding: 0px;margin: 0px;text-align: center;display:inline-block;vertical-align:top;display: flex;justify-content: center;">
+            <a href="index.html" class="logo"><img src="https://www.zoidata.com/assets/img/logo.png" position=absolute style="float:left;vertical-align:middle" width="134" height="40"></a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+           href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Demo</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+        <a href="#konum" class="w3-bar-item w3-button w3-padding-large w3-hide-big">Our Location</a>
+        <!--<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                class="fa fa-search"></i></a>-->
+        </ul>
+    </div>
+</div>
+
+<!-- Küçük ekranlarda gezinme çubuğu (bağlantılara tıklandığında gezinme çubuğunun her zaman içeriğin üstünde görünmesini için onclick özniteliğini kaldırılır) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_aws.jpg"
+             style="width:100%;opacity: 0.9"><!-- https://wallpaperaccess.com/full/3209833.jpg -->
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3 style="text-align: left;font-size: 100px;"><b>ZOI</b> <b><span style="color: #106eea">DATA</span></b></h3>
+            <p style="text-align: left;font-size: 40px"><b>Ready to deploy your AI models with <span style="color: #FF9900">AWS</span>?</b></p>
+        </div>
+    </div>
+    <!--
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://miro.medium.com/max/1200/0*CqiHxsahx_Tc2Nlj.png" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>AWS Servisleri ile Makine Öğrenmesi Modellerinin Dağıtımı</h3>
+            <p><b>Elimizde bulununan makine öğrenmesi modelleri ile resimlerin analiz edilmesini ve kullanıcıya geri
+                dönüş yapmasını sağlar.</b></p>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://novacene.ai/wp-content/uploads/2021/10/operationalizing_models-930x620.jpg"
+             style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>AWS Servisleri ile Makine Öğrenmesi Modellerinin Dağıtımı</h3>
+            <p><b>Elimizde bulununan makine öğrenmesi modelleri ile resimlerin analiz edilmesini ve kullanıcıya geri
+                dönüş yapmasını sağlar.</b></p>
+        </div>
+    </div>-->
+
+    <!-- Hakkında Kısmı -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+        <h2 class="w3-wide">About</h2>
+        <p class="w3-opacity"><i>Our AWS Services</i></p>
+        <p class="w3-justify">What we do is to make models trained with machine learning algorithms available to users over the internet,
+            to store and analyze data from users. This job is to load the model using AWS services,
+            define the necessary permission definitions, store the image from the user,
+            and make predictions with the model after certain preprocessing.
+            We ensure that it is provided and distributed with API service.</p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-third">
+                <p>Model</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/4616/4616734.png" class="w3-round w3-margin-bottom"
+                     alt="Random Name" style="width:60%">
+            </div>
+            <div class="w3-third">
+                <p>AWS</p>
+                <img src="https://img.icons8.com/color/344/amazon-web-services.png" class="w3-round w3-margin-bottom"
+                     alt="Random Name" style="width:60%">
+            </div>
+            <div class="w3-third">
+                <p>Dağıtım</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/7616/7616431.png" class="w3-round" alt="Random Name"
+                     style="width:60%">
+            </div>
+        </div>
+    </div>
+
+    <!-- Tahmin Kısmı -->
+    <div class="w3-light-grey" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Demo</h2>
+            <p class="w3-opacity w3-center"><i>Upload your image and press the submit button!</i></p><br>
+            <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Upload your image :</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control" placeholder="Hours Studied" name="my_image" id="pwd">
+                    </div>
+                </div>
+                <br></br>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+           {% if prediction %}
+            <br></br>
+            <img src="{{img_path}}" height="512px" width="512px" border="4">
+            <h2> </h2>
+            <img src="{{pred_path}}" height="512px" width="512px" border="4">
+            <h2> Sonuç :
+                <i style="color: rgb(0,0,0);"> {{prediction}} </i>
+            </h2>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- İletişim Kısmı -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">Contact</h2>
+        <p class="w3-opacity w3-center"><i>You can send us your suggestions and comments!</i></p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> İzmir,Türkiye<br>
+                <i class="fa fa-phone" style="width:30px"></i> Telephone: +905454701809<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: bilalaltundag2000@gmail.com<br>
+            </div>
+            <div class="w3-col m6">
+                <form action="https://formspree.io/f/mbjboayq" method="POST">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            Your email:
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+                    <div>Your Message:</div>
+                    <textarea name="message"></textarea>
+                    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Page Content -->
+</div>
+
+<!-- Lokasyon Kısmı -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="konum">
+<h2 class="w3-wide w3-center">Our Location</h2>
+<p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1861.3937445967654!2d26.634813176879153!3d38.31474520497845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bb905dcd88e679%3A0x325bc54080b37c33!2sTechnopark%20IZMIR!5e0!3m2!1sen!2str!4v1643883712805!5m2!1sen!2str" width="800" height="600" style="border:0:display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+</div>
+    <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <div>Our Social Networks</div>
+  <a href="https://www.linkedin.com/company/zoi-data/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+    <a href="https://twitter.com/data_zoi"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+</html>
